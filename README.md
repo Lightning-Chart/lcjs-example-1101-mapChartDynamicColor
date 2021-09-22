@@ -147,11 +147,11 @@ Direct developer email support can be purchased through a [Support Plan][4] or b
 © Arction Ltd 2009-2020. All rights reserved.
 
 
-[Map chart]: https://www.arction.com/lightningchart-js-api-documentation/v3.1.0/
-[Map types]: https://www.arction.com/lightningchart-js-api-documentation/v3.1.0/
+[Map chart]: https://www.arction.com/lightningchart-js-api-documentation/v3.1.0/classes/mapchart.html
+[Map types]: https://www.arction.com/lightningchart-js-api-documentation/v3.1.0/globals.html#maptypes
 [Paletted fill]: https://www.arction.com/lightningchart-js-api-documentation/v3.1.0/classes/palettedfill.html
 [Color lookup table]: https://www.arction.com/lightningchart-js-api-documentation/v3.1.0/classes/lut.html
 [Color RGBA]: https://www.arction.com/lightningchart-js-api-documentation/v3.1.0/globals.html#colorrgba
 [Empty line]: https://www.arction.com/lightningchart-js-api-documentation/v3.1.0/globals.html#emptyline
-[Format longitude/latitude]: https://www.arction.com/lightningchart-js-api-documentation/v3.1.0/
+[Format longitude/latitude]: https://www.arction.com/lightningchart-js-api-documentation/v3.1.0/globals.html#formatlongitudelatitude
 
