@@ -78,7 +78,7 @@ mapChart.addLegendBox()
 // Load population data.
 fetch(
   document.head.baseURI +
-    "examples/assets/lcjs_example_1101_mapChartDynamicColor-population_eu_2018.json"
+    "examples/assets/1101/population_eu_2018.json"
 )
   .then((r) => r.json())
   .then((populationData) => {
