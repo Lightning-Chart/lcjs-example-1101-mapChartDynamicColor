@@ -12,7 +12,6 @@ const {
   PalettedFill,
   LUT,
   ColorRGBA,
-  emptyLine,
   formatLongitudeLatitude,
   Themes
 } = lcjs;
@@ -47,7 +46,6 @@ mapChart
       }),
     })
   )
-  .setStrokeStyle(emptyLine)
   .setCursorResultTableFormatter(
     (builder, region, value, longitude, latitude) => {
       builder
