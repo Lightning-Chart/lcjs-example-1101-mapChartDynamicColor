@@ -49,7 +49,7 @@ mapChart
     .add(mapChart)
 
 // Load population data.
-fetch(document.head.baseURI + 'examples/assets/1101/population_eu_2018.json')
+fetch(new URL(document.head.baseURI).origin + new URL(document.head.baseURI).pathname + 'examples/assets/1101/population_eu_2018.json')
     .then((r) => r.json())
     .then((populationData) => {
         // Data is Europe countries population in year 2018.
