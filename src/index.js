@@ -3,7 +3,7 @@
  * based on an external data set (country population).
  */
 // Import LightningChartJS
-const lcjs = require('@arction/lcjs')
+const lcjs = require('@lightningchart/lcjs')
 
 // Extract required parts from LightningChartJS.
 const { lightningChart, MapTypes, PalettedFill, LUT, ColorRGBA, formatLongitudeLatitude, regularColorSteps, Themes } = lcjs
@@ -30,14 +30,14 @@ mapChart
             }),
         }),
     )
-    .setCursorResultTableFormatter((builder, region, value, longitude, latitude) => {
-        builder.addRow(region.name).addRow(formatLongitudeLatitude(longitude, latitude))
-        if (value) {
-            builder.addRow(`Population: `, '', `${(value / (1000 * 1000)).toFixed(1)} million`)
+    .setCursorFormatting((_, hit) => {
+        const result = [[hit.region.name], [formatLongitudeLatitude(hit.longitude, hit.latitude)]]
+        if (hit.value) {
+            result.push(['Population', '', `${(hit.value / (1000 * 1000)).toFixed(1)} million`])
         } else {
-            builder.addRow(`No population data available`)
+            result.push('No population data available')
         }
-        return builder
+        return result
     })
 
 // Add Legend to show color look-up range.

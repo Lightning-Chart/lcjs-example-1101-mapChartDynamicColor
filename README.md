@@ -90,24 +90,6 @@ mapChart.setFillStyle(
 )
 ```
 
-### Auto cursor formatting
-
-`MapChart` cursor formatting is configured with `setCursorResultTableFormatter` method:
-
-```js
-mapChart.setCursorResultTableFormatter((builder, region, value, longitude, latitude) => {
-    builder.addRow(region.name)
-
-    // Region value is supplied to the formatter function. Note, that it is `undefined` for regions which were not invalidated by the user.
-    if (value) {
-        builder.addRow(`Population: `, '', `${(value / (1000 * 1000)).toFixed(1)} million`)
-    } else {
-        builder.addRow(`No population data available`)
-    }
-    return builder
-})
-```
-
 **More map examples**:
 
 -   [Data visualization over LightningChart JS Map Charts](https://lightningchart.com/lightningchart-js-interactive-examples/examples/lcjs-example-1103-mapChartVizXY.html)
@@ -148,11 +130,11 @@ Direct developer email support can be purchased through a [Support Plan][4] or b
 © LightningChart Ltd 2009-2022. All rights reserved.
 
 
-[Map chart]: https://lightningchart.com/js-charts/api-documentation/v5.2.0/classes/MapChart.html
-[Map types]: https://lightningchart.com/js-charts/api-documentation/v5.2.0/variables/MapTypes.html
-[Paletted fill]: https://lightningchart.com/js-charts/api-documentation/v5.2.0/classes/PalettedFill.html
-[Color lookup table]: https://lightningchart.com/js-charts/api-documentation/v5.2.0/classes/LUT.html
-[Color RGBA]: https://lightningchart.com/js-charts/api-documentation/v5.2.0/functions/ColorRGBA.html
-[Empty line]: https://lightningchart.com/js-charts/api-documentation/v5.2.0/variables/emptyLine.html
-[Format longitude/latitude]: https://lightningchart.com/js-charts/api-documentation/v5.2.0/functions/formatLongitudeLatitude.html
+[Map chart]: https://lightningchart.com/js-charts/api-documentation/v6.0.0/classes/MapChart.html
+[Map types]: https://lightningchart.com/js-charts/api-documentation/v6.0.0/variables/MapTypes.html
+[Paletted fill]: https://lightningchart.com/js-charts/api-documentation/v6.0.0/classes/PalettedFill.html
+[Color lookup table]: https://lightningchart.com/js-charts/api-documentation/v6.0.0/classes/LUT.html
+[Color RGBA]: https://lightningchart.com/js-charts/api-documentation/v6.0.0/functions/ColorRGBA.html
+[Empty line]: https://lightningchart.com/js-charts/api-documentation/v6.0.0/variables/emptyLine.html
+[Format longitude/latitude]: https://lightningchart.com/js-charts/api-documentation/v6.0.0/functions/formatLongitudeLatitude.html
 
