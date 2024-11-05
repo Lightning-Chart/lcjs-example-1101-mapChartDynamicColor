@@ -130,11 +130,11 @@ Direct developer email support can be purchased through a [Support Plan][4] or b
 © LightningChart Ltd 2009-2022. All rights reserved.
 
 
-[Map chart]: https://lightningchart.com/js-charts/api-documentation/v6.0.0/classes/MapChart.html
-[Map types]: https://lightningchart.com/js-charts/api-documentation/v6.0.0/variables/MapTypes.html
-[Paletted fill]: https://lightningchart.com/js-charts/api-documentation/v6.0.0/classes/PalettedFill.html
-[Color lookup table]: https://lightningchart.com/js-charts/api-documentation/v6.0.0/classes/LUT.html
-[Color RGBA]: https://lightningchart.com/js-charts/api-documentation/v6.0.0/functions/ColorRGBA.html
-[Empty line]: https://lightningchart.com/js-charts/api-documentation/v6.0.0/variables/emptyLine.html
-[Format longitude/latitude]: https://lightningchart.com/js-charts/api-documentation/v6.0.0/functions/formatLongitudeLatitude.html
+[Map chart]: https://lightningchart.com/js-charts/api-documentation/v6.1.0/classes/MapChart.html
+[Map types]: https://lightningchart.com/js-charts/api-documentation/v6.1.0/variables/MapTypes.html
+[Paletted fill]: https://lightningchart.com/js-charts/api-documentation/v6.1.0/classes/PalettedFill.html
+[Color lookup table]: https://lightningchart.com/js-charts/api-documentation/v6.1.0/classes/LUT.html
+[Color RGBA]: https://lightningchart.com/js-charts/api-documentation/v6.1.0/functions/ColorRGBA.html
+[Empty line]: https://lightningchart.com/js-charts/api-documentation/v6.1.0/variables/emptyLine.html
+[Format longitude/latitude]: https://lightningchart.com/js-charts/api-documentation/v6.1.0/functions/formatLongitudeLatitude.html
 
