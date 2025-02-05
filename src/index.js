@@ -31,7 +31,10 @@ mapChart
         }),
     )
     .setCursorFormatting((_, hit) => {
-        const result = [[hit.region.name], [formatLongitudeLatitude(hit.longitude, hit.latitude)]]
+        const result = [
+            [{ text: hit.region.name, rowFillStyle: mapChart.getTheme().cursorResultTableHeaderBackgroundFillStyle }],
+            [formatLongitudeLatitude(hit.longitude, hit.latitude)],
+        ]
         if (hit.value) {
             result.push(['Population', '', `${(hit.value / (1000 * 1000)).toFixed(1)} million`])
         } else {
