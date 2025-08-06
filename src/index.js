@@ -43,16 +43,6 @@ mapChart
         return result
     })
 
-// Add Legend to show color look-up range.
-mapChart
-    .addLegendBox()
-    // Dispose example UI elements automatically if they take too much space. This is to avoid bad UI on mobile / etc. devices.
-    .setAutoDispose({
-        type: 'max-width',
-        maxWidth: 0.3,
-    })
-    .add(mapChart)
-
 // Load population data.
 fetch(new URL(document.head.baseURI).origin + new URL(document.head.baseURI).pathname + 'examples/assets/1101/population_eu_2018.json')
     .then((r) => r.json())
